@@ -1,0 +1,66 @@
+<!--
+* This version allows multiple spins
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin the Wheel for Discount</title>
+    <style>
+        .wheel-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .wheel-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .paddle-image {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .spin-button, .reward-button {
+            font-size: 24px;
+            margin: 0 5px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .reward-text {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wheel-container">
+        <img src="images/wheel.webp" alt="spin wheel" class="wheel-image">
+        <img src="images/paddle.png" alt="wheel pointer" class="paddle-image">
+    </div>
+    <div class="button-container">
+        <button class="spin-button">SPIN WHEEL</button>
+        <button class="reward-button">GET REWARD</button>
+    </div>
+    <div class="reward-text"></div>
+    <script src="js/wheel_no_storage.js"></script>
+</body>
+</html>
