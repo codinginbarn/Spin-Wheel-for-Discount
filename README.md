@@ -1,5 +1,5 @@
 # Spin-Wheel-for-Discount
-Simple HTML and JavaScript spin the wheel for discount.
+###Simple HTML and JavaScript spin the wheel for discount.
 
 Here's an explanation of how to use the `rewards` array and the `weight` property:
 
@@ -71,5 +71,7 @@ With these changes, the probability of landing on each reward is as follows:
 So, the '50% discount', '40% discount', and '30% discount' rewards are now less likely to be selected compared to the other rewards.
 
 You can further adjust the `weight` values to fine-tune the probabilities as per your requirements. Just remember that the sum of all `weight` values should be greater than 0, and the higher the `weight` value, the more likely the reward will be selected.
+
+###NOTE: there is a version without localstorage and allows unlimited spins: discount-wheel.html with js/wheel_no_storage.js
 
 ##Brought to you by https://discountplr.com
